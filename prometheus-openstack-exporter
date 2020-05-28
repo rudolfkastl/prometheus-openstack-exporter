@@ -812,5 +812,5 @@ if __name__ == '__main__':
     if data_gatherer_needed(config):
         data_gatherer = DataGatherer()
         data_gatherer.start()
-    server = ForkingHTTPServer(('', config.get('listen_port')), handler)
+    server = ForkingHTTPServer((config.get('listen_address'), config.get('listen_port')), handler)
     server.serve_forever()
