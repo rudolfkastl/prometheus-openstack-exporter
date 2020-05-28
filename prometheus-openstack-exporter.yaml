@@ -2,6 +2,7 @@
 # Copyright (C) 2016-2019 Canonical, Ltd.
 #
 
+listen_address: 0.0.0.0
 listen_port: 9183
 cache_refresh_interval: 300  # In seconds
 cache_file: /var/cache/prometheus-openstack-exporter/mycloud
